@@ -1,9 +1,7 @@
-package com.example.launchmodel.Network;
+package com.example.network;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -14,12 +12,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 
-import javax.net.ssl.HttpsURLConnection;
-
+/**
+ * @author 李阳(liyang073)
+ * @date 2020/11/23 18:07
+ * @desc
+ */
 public class NetworkActivity extends Activity {
 
     private TextView mTvRequest;

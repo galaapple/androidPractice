@@ -9,7 +9,10 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.example.launchmodel.activity.SingleTaskActivity
 import com.example.myapplication.Constants.ACTIVITY_PARAM_CONTENT
+import com.example.network.NetworkActivity
+import com.example.view.ViewScrollActivity
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -32,6 +35,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra(ACTIVITY_PARAM_CONTENT, "123")
             //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+        }
+        tv_test_jump.setOnClickListener {
+            val intent = Intent(this, ViewScrollActivity::class.java)
             startActivity(intent)
         }
         Log.e(TAG, "onCreate")
