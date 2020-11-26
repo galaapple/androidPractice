@@ -45,7 +45,14 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity"
             android:launchMode="singleInstance"/>
-        <activity android:name="com.example.network.NetworkActivity" />
+        <activity android:name="com.example.network.NetworkActivity"
+            android:label="你好">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.view.ViewScrollActivity" />
 
     </application>
