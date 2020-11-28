@@ -54,6 +54,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.view.ViewScrollActivity" />
+        <activity android:name="com.example.persistentsave.PassValueActivity" />
+        <activity android:name="com.example.persistentsave.ReceiveValueActivity"
+            android:process=":test"/>
 
     </application>
 

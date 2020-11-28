@@ -45,7 +45,7 @@ data class Student(
         sb.append(" ")
         sb.append("age")
         sb.append(age)
-        return super.toString()
+        return sb.toString()
     }
 
 }

@@ -12,6 +12,7 @@ import android.view.MenuItem
 import com.example.launchmodel.activity.SingleTaskActivity
 import com.example.myapplication.Constants.ACTIVITY_PARAM_CONTENT
 import com.example.network.NetworkActivity
+import com.example.persistentsave.PassValueActivity
 import com.example.view.ViewScrollActivity
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         tv_test_jump.setOnClickListener {
-            val intent = Intent(this, ViewScrollActivity::class.java)
+            val intent = Intent(this, PassValueActivity::class.java)
             startActivity(intent)
         }
         Log.e(TAG, "onCreate")

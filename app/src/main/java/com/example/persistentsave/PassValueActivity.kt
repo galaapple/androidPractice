@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_pass_value.*
  * @desc
  */
 class PassValueActivity: Activity() {
+    val REQUEST_CODE = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pass_value)
@@ -20,6 +21,14 @@ class PassValueActivity: Activity() {
         tv_jump.setOnClickListener {
             val intent = Intent(this, ReceiveValueActivity::class.java)
             intent.putExtra("nihao", student)
+            startActivityForResult(intent, REQUEST_CODE)
         }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
+            tv_result.text = data?.getParcelableExtra<Student>("niyehao")?.toString() ?: "default"
+        }
+        super.onActivityResult(requestCode, resultCode, data)
     }
 }
