@@ -11,6 +11,8 @@ import androidx.annotation.Nullable;
 import com.example.launchmodel.constant.Constants;
 import com.example.myapplication.R;
 
+import java.lang.ref.ReferenceQueue;
+
 public abstract class LaunchModelBaseActivity extends Activity {
 
     private static int count = 0;
@@ -30,6 +32,7 @@ public abstract class LaunchModelBaseActivity extends Activity {
         mTvAction = findViewById(R.id.tv_action);
         mTvAction2 = findViewById(R.id.tv_action_2);
         mTvTitle.setText(TAG);
+        ClassLoader classLoader = getClassLoader();
     }
 
     @Override

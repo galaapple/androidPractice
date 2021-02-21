@@ -57,6 +57,7 @@
         <activity android:name="com.example.persistentsave.PassValueActivity" />
         <activity android:name="com.example.persistentsave.ReceiveValueActivity"
             android:process=":test"/>
+        <activity android:name="com.example.dispatchmotionevent.MotionEventEntranceActivity" />
 
     </application>
 

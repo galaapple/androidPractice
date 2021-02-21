@@ -9,7 +9,9 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.example.dispatchmotionevent.MotionEventEntranceActivity
 import com.example.launchmodel.activity.SingleTaskActivity
+import com.example.launchmodel.activity.StandardActivity
 import com.example.myapplication.Constants.ACTIVITY_PARAM_CONTENT
 import com.example.network.NetworkActivity
 import com.example.persistentsave.PassValueActivity
